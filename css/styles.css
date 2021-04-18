@@ -6,39 +6,60 @@
 body {
     font-family: var(--main-font);
     }
-
+h1,h2,h3 {
+    margin: 0;
+    padding: 00
+}
+ul {
+    padding: 0;
+    margin: 0
+}
+p {
+    padding: 0;
+}
+img {
+    display: block;
+}
+.container {
+    width: 1200px;
+    align-items: center;
+    
+}
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
 /* ==== HEADER ==== */
 .header .container {
     display: flex;
     align-items: center;
-    padding-top: 32px;
-}
-.header {
     background: #FFFFFF;
-}
-.navigation-list {
-    display: flex;
-    align-items: center;
-    
+    padding-top: 24px;
+    padding-bottom: 25px;
 }
 .navigation {
     display: flex;
 }
-.navigation-list-item {
+.navigation-list {
+    display: flex;
+    align-items: center;
     list-style: none;
-    margin-right: 45px
 }
 .navigation-logo-header {
-    margin-left: 215px;
     margin-right: 93px;
+    margin-left: 215px;
 }
-.address-contact-header {
+.navigation-list-item:nth-child(1) {
+    margin-right: 46px;
+}
+.navigation-list-item:nth-child(2) {
+    margin-right: 64px;
+}
+.header .link-mail {
     margin-left: 353px;
+    margin-right: 50px;
 }
-.header .address-contact-header  {
-    margin-left: auto;
-    margin-right: 227px;
-}
+
 .header .navigation-logo-header {
     font-family: var(--secondary-font);
     font-weight: 700;
@@ -47,8 +68,7 @@ body {
     letter-spacing: 0.03em;
     text-decoration: none;
     color: var(--main-color);;
-}
-.navigation-logo-header > span {
+}.navigation-logo-header > span {
     color: #000000;
 }
 .navigation-list-link,
@@ -60,31 +80,20 @@ body {
     letter-spacing: 0.02em;
     color: #212121;
     text-decoration: none;
-    }
-.address-contact-header > .link-mail, .link-tel {
+}
+.link-mail, .link-tel {
     color: #757575;
 }
-
-
 .navigation-list-link:hover,
 .navigation-list-link:focus,
 .link-mail:hover, .link-mail:focus,
-.link-tel:hover, .link-tel:focus,
-.address-list-link:hover, .address-list-link:focus,
-.address-list-link1:hover, .address-list-link1:focus,
-.address-list-link2:hover, .address-list-link2:focus {
+.link-tel:hover, .link-tel:focus{
     color: var(--main-color)
 }
 /* ==== END HEADER ==== */
 /* ==== MAIN ====*/
 
-
-.lorem-ipsum, .about {
-    background: #FFFFFF;;
-}
-.our-team {
-    background: #F5F4FA;
-}
+/* ==== HERO ==== */
 .hero {
     font-weight: 900;
     font-size: 44px;
@@ -96,59 +105,32 @@ body {
     color: #FFFFFF; 
     background: #2F303A;
 }
-
-.modal-btn {
+.hero .container {
+    display: flex;
+}
+ .studio {
+    width: 900px;
+    margin-top: 200px;
+    margin-bottom: 30px;
+    margin-left: 452px;
+    margin-right: 452px;
+}
+.index-modal-btn {
+    width: 200px;
+    height: 50px;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.625;
     /*text-align: center;*/
     letter-spacing: 0.03em;
     color: #212121;
-    cursor: pointer
-    }
-.lorem-ipsum .list-text {
-    display: flex;
-    list-style: none;
-    margin-right: 30px;
+    cursor: pointer;
+    display: block;
+    border-radius: 4px;
+    margin-top: 30px;
+    margin-left: 700px;
+    margin-bottom: 200px;
 }
-.lorem-ipsum {
-    margin-left: 215px;
-    margin-right: 215px;
-}
-.list-text-lorem {
-    margin-right: 30px;
-    width: 270px;
-}
-.studio-about {
-    text-align: center;
-    margin-top: 104px;
-
-}
-.picture {
-    margin-bottom: 94px;
-}
-.list-picture {
-    display: flex;
-    justify-content: center;
-    list-style: none;
-}
-.list-picture-item {
-    margin-right: 30px;
-}
-.studio-our-team {
-    text-align: center;
-}
-.list-persons {
-    display: flex;
-    margin-top: 50;
-    list-style: none
-}
-.list-persons .list-persons-item {
-    margin-left: 215px;
-    
-}
-
-
 .index-modal-btn {
     background-color: var(--main-color);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -168,12 +150,24 @@ body {
     background-color: var(--main-color);
     color: #FFFFFF;
 }
-.photo-list-name {
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 2;
-    letter-spacing: 0.06em;
-    color: #212121;
+/* ==== END HERO ==== */
+
+/* ==== LOREM IPSUM ====*/
+.lorem-ipsum, .about {
+    background: #FFFFFF;;
+}
+.our-team {
+    background: #F5F4FA;
+}
+
+.lorem-ipsum .container {
+    display: flex;
+    margin-left: 205px;
+    margin-right: 225px;
+}
+.list-text {
+    display: flex;
+    list-style: none;
 }
 .studio-lorem {
     font-weight: 700;
@@ -183,6 +177,26 @@ body {
     text-transform: uppercase;
     color: #212121;
 }
+.list-text-item > .list-text-lorem {
+    line-height: 1.714
+}
+/* ==== END LOREM IPSUM ==== */
+
+/* ==== ABOUT ==== */
+.about .studio-about {
+    margin-bottom: 84px;
+    text-align: center;
+}
+.list-picture {
+    display: flex;
+    list-style: none;
+}
+.list-picture-item {
+    margin-right: 30px;
+}
+.list-picture-item:nth-child(1) {
+    margin-left: 215px;
+} 
 .studio-about {
     font-weight: 700;
     font-size: 36px;
@@ -191,15 +205,34 @@ body {
     letter-spacing: 0.03em;
     color: #212121;
 }
-.photo-list-text, .list-text-lorem {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.875;
-    letter-spacing: 0.03em;
-    color: #757575;
+/* ==== END ABOUT ==== */
+
+/* ==== OUR TEAM ====*/
+.studio-our-team {
+    margin-top: 94px;
+    margin-bottom: 50px;
+    text-align: center;
 }
-.list-text-item > .list-text-lorem {
-    line-height: 1.714
+.list-persons {
+    display: flex;
+    list-style: none;
+}
+.list-persons-item {
+    margin-right: 30px;
+}
+.list-persons-item:first-child {
+    margin-left: 215px;
+}
+.list-persons-item:last-child {
+    margin-right: 215px;
+}
+.list-persons .person-name {
+    margin-top: 30px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.person-position {
+    text-align: center;
 }
 .person-name {
     font-weight: 500;
@@ -219,6 +252,28 @@ body {
     letter-spacing: 0.03em;
     color: #757575;
 }
+
+/* ==== END OUR TEAM ==== */
+
+
+
+.photo-list-name {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    color: #212121;
+}
+
+
+.photo-list-text, .list-text-lorem {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.875;
+    letter-spacing: 0.03em;
+    color: #757575;
+}
+
 
 /* ==== END MAIN ==== */
 
@@ -259,7 +314,30 @@ body {
 }
 .navigation-logo-footer > span {
     color: #FFFFFF;
-
+}
+.address-list-link:hover, .address-list-link:focus,
+.address-list-link1:hover, .address-list-link1:focus,
+.address-list-link2:hover, .address-list-link2:focus{
+    color: var(--main-color)
+}
+.contact .container {
+    display: flex;
+}
+.navigation-logo-footer {
+    margin-top: 60px;
+    margin-bottom: 20px;
+}
+.address-footer {
+    margin-left: 215px;
+}
+.address-list {
+    list-style: none;
+}
+.address-list-item:nth-child(1) {
+    margin-top: 20px;
+}
+.address-list-item {
+    margin-bottom: 9px;
 }
 
 /* ==== END FOOTER ==== */
