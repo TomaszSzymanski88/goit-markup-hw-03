@@ -178,6 +178,7 @@ img {
   letter-spacing: 0.03em;
   color: #212121;
   font-family: var(--main-font);
+  background: #F5F4FA;
 }
 .wszystkie {
   width: 115px;
