@@ -134,7 +134,7 @@ img {
   font-size: 16px;
   line-height: 1.875;
   letter-spacing: 0.06em;
-  color: #ffffff;
+  color: #FFFFFF;
   cursor: pointer;
   margin-bottom: 107px;
 }
@@ -205,7 +205,7 @@ img {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #212121;
-  margin-top: -53px;
+  margin-top: -53px
 }
 .list-text-item > .list-text-lorem {
   line-height: 1.714;
@@ -294,7 +294,7 @@ img {
   justify-content: center;
 }
 .our-team {
-  background: #f5f4fa;
+  background: #F5F4FA;
 }
 .studio-our-team {
   margin-bottom: 50px;
@@ -367,6 +367,7 @@ img {
 .clients-list-item {
   display: flex;
   margin-right: 30px;
+  
 }
 /* ==== END NASI KLIENCI ==== */
 
