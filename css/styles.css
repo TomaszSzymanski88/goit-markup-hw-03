@@ -24,7 +24,7 @@ img {
 }
 .container {
   width: 1200px;
-  align-items: center;
+  padding: 0 15px;
   margin: 0 auto;
 }
 .section {
@@ -99,26 +99,29 @@ img {
 
 /* ==== HERO ==== */
 .hero {
+  background: #2f303a;
+}
+.hero .container  {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center; 
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+.studio {
+  display: flex;
+  width: 696px;
+  font-style: 400;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.364;
-  /* or 136% */
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: #ffffff;
-  background: #2f303a;
-  display: block;
-}
-.hero .container {
-  display: inline-block;
-  margin-top: 200px;
-  margin-bottom: 300px;
-}
-.studio {
-  padding-left: 80px;
-  padding-right: 80px;
-  margin-bottom: 38px;
+  color: #FFFFFF;
+  margin-bottom: 30px;
 }
 .index-modal-btn {
   width: 200px;
@@ -133,8 +136,6 @@ img {
   display: block;
   border-radius: 4px;
   margin: 0 auto;
-}
-.index-modal-btn {
   background-color: var(--main-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
@@ -142,12 +143,7 @@ img {
   font-size: 16px;
   line-height: 1.875;
   color: #ffffff;
-  width: 200px;
-  /* identical to box height, or 187%
-    display: flex;
-    align-items: center;
-    text-align: center;
-    letter-spacing: 0.06em; */
+  width: 200px
 }
 /* ==== END HERO ==== */
 
@@ -202,8 +198,8 @@ img {
 /* ==== END NAVIGATION ====*/
 
 /* ==== LOREM IPSUM ====*/
-.lorem-ipsum,
-.about {
+.lorem-ipsum .container
+{
   background: #ffffff;
   align-items: center;
 }
@@ -228,8 +224,6 @@ img {
   letter-spacing: 0.03em;
   font-size: 14px;
   line-height: 1.714;
-
-  /* or 171% */
   letter-spacing: 0.03em;
 }
 .list-text .list-text-item {
@@ -239,7 +233,7 @@ img {
 /* ==== END LOREM IPSUM ==== */
 
 /* ==== PHOTO ==== */
-.photo-list {
+.photo-list .container {
   display: flex;
   flex-wrap: wrap;
   list-style: none;
@@ -276,9 +270,12 @@ img {
 /* ==== END PHOTO ====*/
 
 /* ==== ABOUT ==== */
-.about .studio-about {
-  margin-bottom: 84px;
+.about .container  {
+
+}
+.studio-about {
   text-align: center;
+  margin-right: auto;
 }
 .list-picture {
   display: flex;
@@ -288,6 +285,7 @@ img {
   margin-right: 30px;
 }
 .studio-about {
+  margin-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.167;
@@ -298,7 +296,7 @@ img {
 /* ==== END ABOUT ==== */
 
 /* ==== OUR TEAM ====*/
-.our-team {
+.our-team .container {
   background: #f5f4fa;
 }
 .studio-our-team {
@@ -349,7 +347,6 @@ img {
   letter-spacing: 0.03em;
 }
 /* ==== END OUR TEAM ==== */
-
 /* ==== END MAIN ==== */
 
 /* ==== FOOTER ==== */
