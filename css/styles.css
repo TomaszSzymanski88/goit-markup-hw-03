@@ -91,9 +91,11 @@ img {
 .link-mail:hover,
 .link-mail:focus,
 .link-tel:hover,
-.link-tel:focus {
+.link-tel:focus{
   color: var(--main-color);
 }
+
+
 /* ==== END HEADER ==== */
 /* ==== MAIN ====*/
 
@@ -141,6 +143,9 @@ img {
 /* ==== END HERO ==== */
 
 /* ==== NAVIGATION ====*/
+.portfolio-navigation {
+  padding-bottom: 50px
+}
 .navigation-menu-list {
   display: flex;
   list-style: none;
@@ -164,6 +169,7 @@ img {
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
+  font-family: var(--main-font)
 }
 .wszystkie {
   width: 115px;
@@ -224,6 +230,9 @@ img {
 /* ==== PHOTO ==== */
 .photo .container {
   display: flex;
+}
+.photo {
+  padding-bottom: 94px;
 }
 .photo-list {
   display: flex;
@@ -374,6 +383,16 @@ img {
 /* ==== END MAIN ==== */
 
 /* ==== FOOTER ==== */
+.contact .container {
+  display: flex;
+  padding-bottom: 60px;
+}
+.contact {
+  background: #2f303a;
+  padding-bottom: 0;
+  padding-top: 0;
+  padding-top: 60px;
+}
 .address-list-item {
   font-weight: normal;
   font-size: 14px;
@@ -394,9 +413,7 @@ img {
   text-decoration: none;
   color: rgba(255, 255, 255, 0.6);
 }
-.contact {
-  background: #2f303a;
-}
+
 .navigation-logo-footer {
   font-family: var(--secondary-font);
   font-weight: 700;
@@ -416,10 +433,6 @@ img {
 .address-list-link2:hover,
 .address-list-link2:focus {
   color: var(--main-color);
-}
-.navigation-logo-footer {
-  margin-top: 60px;
-  margin-bottom: 20px;
 }
 .address-list {
   list-style: none;
