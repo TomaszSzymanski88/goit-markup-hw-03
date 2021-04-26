@@ -91,10 +91,9 @@ img {
 .link-mail:hover,
 .link-mail:focus,
 .link-tel:hover,
-.link-tel:focus{
+.link-tel:focus {
   color: var(--main-color);
 }
-
 
 /* ==== END HEADER ==== */
 /* ==== MAIN ====*/
@@ -102,9 +101,6 @@ img {
 /* ==== HERO ==== */
 .hero {
   background: #2f303a;
-  background-image: url('/goit-markup-hw-04/images/main/ImgOverlay.png');
-  background-size: cover;
-  background-repeat: no-repeat;
 }
 .hero .container {
   display: flex;
@@ -136,7 +132,7 @@ img {
   font-size: 16px;
   line-height: 1.875;
   letter-spacing: 0.06em;
-  color: #FFFFFF;
+  color: #ffffff;
   cursor: pointer;
   margin-bottom: 107px;
 }
@@ -144,7 +140,7 @@ img {
 
 /* ==== NAVIGATION ====*/
 .portfolio-navigation {
-  padding-bottom: 50px
+  padding-bottom: 50px;
 }
 .navigation-menu-list {
   display: flex;
@@ -169,7 +165,7 @@ img {
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
-  font-family: var(--main-font)
+  font-family: var(--main-font);
 }
 .wszystkie {
   width: 115px;
@@ -211,7 +207,7 @@ img {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #212121;
-  margin-top: -53px
+  margin-top: -53px;
 }
 .list-text-item > .list-text-lorem {
   line-height: 1.714;
@@ -303,7 +299,7 @@ img {
   justify-content: center;
 }
 .our-team {
-  background: #F5F4FA;
+  background: #f5f4fa;
 }
 .studio-our-team {
   margin-bottom: 50px;
@@ -352,34 +348,6 @@ img {
   letter-spacing: 0.03em;
 }
 /* ==== END OUR TEAM ==== */
-
-/* ==== NASI KLIENCI ==== */
-.our-clients .container {
-  justify-content: center;
-  text-align: center;
-}
-.clients {
-  text-align: center;
-  margin-bottom: 50px;
-  font-weight: 7000;
-  font-size: 36px;
-  line-height: 42px;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: #212121;
-}
-.clients-list {
-  display: flex;
-  list-style: none;
-  justify-content: center;
-}
-.clients-list-item {
-  display: flex;
-  margin-right: 30px;
-  
-}
-/* ==== END NASI KLIENCI ==== */
-
 /* ==== END MAIN ==== */
 
 /* ==== FOOTER ==== */
